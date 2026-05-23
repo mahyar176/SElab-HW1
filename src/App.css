@@ -1,0 +1,44 @@
+.App {
+  min-height: auto;
+  display: block;
+  flex-direction: row;
+  background: hotpink;
+}
+
+main {
+  flex: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 0px;
+    background: lime;
+  }
+}
