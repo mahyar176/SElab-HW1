@@ -1,23 +1,26 @@
 .App {
-  min-height: auto;
-  display: block;
-  flex-direction: row;
-  background: hotpink;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
 }
 
 main {
   flex: 1;
 }
 
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
+/* Global button styles */
 button {
   font-family: inherit;
 }
 
+/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -28,17 +31,17 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #764ba2;
 }
 
+/* Responsive utility classes */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 0px;
-    background: lime;
+    scroll-padding-top: 60px;
   }
 }
